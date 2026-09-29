@@ -16,17 +16,29 @@
                 </div>
                 <a href="index.html" class="text-xl font-extrabold text-white">Cloud<span class="text-blue-400">Guide</span></a>
             </div>
-            <nav class="hidden lg:flex items-center space-x-1 text-sm font-medium">
-                <a href="index.html" class="px-3 py-2 rounded-lg bg-blue-600/20 text-blue-400 font-semibold">Главная</a>
-                <a href="vps-what-is.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">VPS</a>
-                <a href="aws.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">AWS</a>
-                <a href="gcp.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">GCP</a>
-                <a href="comparison.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Сравнение</a>
-                <a href="security.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Безопасность</a>
-                <a href="containers.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Docker</a>
-                <a href="finops.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">FinOps</a>
-                <a href="deployment.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Деплой</a>
-                <a href="conclusion.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Итоги</a>
+
+            <!-- Чекбокс для работы бургера без JS -->
+            <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+            <label for="burger-toggle" class="burger-btn lg:hidden flex flex-col justify-between w-7 h-5 cursor-pointer z-50">
+                <span class="block w-full h-0.5 bg-white rounded transition-all"></span>
+                <span class="block w-full h-0.5 bg-white rounded transition-all"></span>
+                <span class="block w-full h-0.5 bg-white rounded transition-all"></span>
+            </label>
+
+            <!-- Навигационное меню -->
+            <nav class="nav-menu">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-1 text-sm font-medium">
+                    <a href="index.html" class="px-3 py-2 rounded-lg bg-blue-600/20 text-blue-400 font-semibold w-full lg:w-auto">Главная</a>
+                    <a href="vps-what-is.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">VPS</a>
+                    <a href="aws.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">AWS</a>
+                    <a href="gcp.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">GCP</a>
+                    <a href="comparison.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">Сравнение</a>
+                    <a href="security.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">Безопасность</a>
+                    <a href="containers.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">Docker</a>
+                    <a href="finops.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">FinOps</a>
+                    <a href="deployment.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">Деплой</a>
+                    <a href="conclusion.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 w-full lg:w-auto">Итоги</a>
+                </div>
             </nav>
         </div>
     </header>
