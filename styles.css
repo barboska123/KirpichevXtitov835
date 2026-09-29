@@ -1,0 +1,57 @@
+/* Прячем чекбокс управления меню */
+.burger-checkbox {
+    display: none;
+}
+
+/* Стили мобильного меню (работает на экранах меньше 1024px) */
+@media (max-width: 1023px) {
+    .nav-menu {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #0f172a; /* Цвет под Tailwind slate-900 */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #1e293b;
+        
+        /* Плавное сворачивание/разворачивание */
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: max-height 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Когда нажимают на бургер (чекбокс активен) — меню раскрывается */
+    .burger-checkbox:checked ~ .nav-menu {
+        max-height: 600px;
+        visibility: visible;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Превращение бургера в крестик при открытии */
+    .burger-checkbox:checked ~ .burger-btn span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .burger-checkbox:checked ~ .burger-btn span:nth-child(2) {
+        opacity: 0;
+    }
+    .burger-checkbox:checked ~ .burger-btn span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+/* На компьютерах (ноутбуках) бургер скрыт, меню отображается обычно */
+@media (min-width: 1024px) {
+    .burger-btn,
+    .burger-checkbox {
+        display: none;
+    }
+    .nav-menu {
+        display: block !important;
+    }
+}
