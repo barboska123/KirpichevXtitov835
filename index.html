@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облачные технологии и VPS | Главная</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">
+    <header class="bg-slate-900 text-white shadow-lg sticky top-0 z-50 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center shadow-md">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h10a4 4 0 004-4M7 9l5-5 5 5M12 4v12"></path></svg>
+                </div>
+                <a href="index.html" class="text-xl font-extrabold text-white">Cloud<span class="text-blue-400">Guide</span></a>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-1 text-sm font-medium">
+                <a href="index.html" class="px-3 py-2 rounded-lg bg-blue-600/20 text-blue-400 font-semibold">Главная</a>
+                <a href="vps-what-is.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">VPS</a>
+                <a href="aws.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">AWS</a>
+                <a href="gcp.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">GCP</a>
+                <a href="comparison.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Сравнение</a>
+                <a href="security.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Безопасность</a>
+                <a href="containers.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Docker</a>
+                <a href="finops.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">FinOps</a>
+                <a href="deployment.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Деплой</a>
+                <a href="conclusion.html" class="px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800">Итоги</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow w-full py-10">
+        <div class="bg-gradient-to-r from-slate-900 to-blue-950 text-white rounded-3xl p-8 sm:p-12 mb-10 shadow-xl overflow-hidden">
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">Облачные технологии и VPS</h1>
+            <p class="text-lg text-slate-300 max-w-3xl mb-6 leading-relaxed">
+                Интерактивное учебное руководство по выбору виртуальных серверов, анализу облачных платформ мировых лидеров (AWS, GCP), методам контейнеризации и обеспечению информационной безопасности.
+            </p>
+            <div class="my-6">
+                <img src="images/cloud-hero.jpg" alt="Облачные технологии" class="rounded-2xl shadow-lg w-full h-64 sm:h-80 object-cover border border-slate-700">
+            </div>
+            <div class="bg-slate-800/60 backdrop-blur border border-slate-700/80 rounded-2xl p-6 mb-6">
+                <h3 class="text-white font-semibold text-base mb-2">О проекте и целях</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Данный ресурс создан в рамках учебной программы для систематизации знаний в области современной IT-инфраструктуры. Здесь рассмотрены ключевые архитектурные паттерны, модели масштабирования и практические аспекты развертывания веб-приложений.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+                <a href="vps-what-is.html" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-blue-600/30">Начать чтение</a>
+                <a href="comparison.html" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-xl transition border border-slate-700">Сравнить облака</a>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Разделы руководства</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="vps-what-is.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Что такое VPS/VDS</h3>
+                <p class="text-sm text-slate-600">Разбор принципов гипервизорной виртуализации и отличий от классического виртуального хостинга.</p>
+            </a>
+            <a href="aws.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Amazon AWS</h3>
+                <p class="text-sm text-slate-600">Глубокий анализ экосистемы AWS: от EC2 и S3 до архитектурных концепций высокой доступности.</p>
+            </a>
+            <a href="gcp.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Google Cloud (GCP)</h3>
+                <p class="text-sm text-slate-600">Преимущества платформы Google в сфере аналитики данных, Kubernetes и машинного обучения.</p>
+            </a>
+            <a href="comparison.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Сравнение платформ</h3>
+                <p class="text-sm text-slate-600">Наглядный сравнительный анализ ценовой политики, производительности и удобства провайдеров.</p>
+            </a>
+            <a href="security.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Безопасность</h3>
+                <p class="text-sm text-slate-600">Изучение модели разделенной ответственности, сетевых экранов, шифрования и политик IAM.</p>
+            </a>
+            <a href="containers.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Docker & Kubernetes</h3>
+                <p class="text-sm text-slate-600">Изоляция процессов, сборка образов, оркестрация микросервисов и автомасштабирование.</p>
+            </a>
+            <a href="finops.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">FinOps и затраты</h3>
+                <p class="text-sm text-slate-600">Методологии финансового контроля бюджетов облачных мощностей и предотвращения утечек бюджета.</p>
+            </a>
+            <a href="deployment.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Практический деплой</h3>
+                <p class="text-sm text-slate-600">Пошаговая видеоинструкция и руководство по публикации веб-приложения на удаленном сервере.</p>
+            </a>
+            <a href="conclusion.html" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 hover:border-blue-500 transition group">
+                <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">Заключение</h3>
+                <p class="text-sm text-slate-600">Итоговые выводы о будущем облачных систем, трендах серверлесс и гибридных архитектур.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-auto border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-center">
+            <p>&copy; 2026 Титов Дмитрий Николаевич. Учебный проект.</p>
+        </div>
+    </footer>
+</body>
+</html>
